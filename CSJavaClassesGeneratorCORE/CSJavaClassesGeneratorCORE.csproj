@@ -1,0 +1,37 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="CSAc4yClassFW">
+      <HintPath>C:\library\LPCsharp\CSAc4yClassFW.dll</HintPath>
+    </Reference>
+    <Reference Include="CSAc4yFW">
+      <HintPath>C:\library\LPCsharp\CSAc4yFW.dll</HintPath>
+    </Reference>
+    <Reference Include="CSAc4yUtilityFW">
+      <HintPath>C:\library\LPCsharp\CSAc4yUtilityFW.dll</HintPath>
+    </Reference>
+    <Reference Include="CSARMetaPlanFW">
+      <HintPath>C:\library\LPCsharp\CSARMetaPlanFW.dll</HintPath>
+    </Reference>
+    <Reference Include="CSEFTPC4Core3Objects">
+      <HintPath>C:\library\LPCsharp\CSEFTPC4Core3Objects.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
