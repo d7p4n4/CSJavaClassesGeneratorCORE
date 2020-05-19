@@ -44,7 +44,7 @@ namespace CSJavaClassesGeneratorCORE
         public void Run()
         {
 
-            Ac4yClass ac4yClass = new Ac4yClassHandler().GetAc4yClassFromType(typeof(CSEFTPC4Core3Objects.Ac4yObjects.Ac4yPersistentChild));
+            Ac4yClass ac4yClass = new Ac4yClassHandler().GetAc4yClassFromType(typeof(CSEFTPC4Core3Objects.Ac4yObjects.Ac4yObject));
 
             new JavaClassGenerator()
             {

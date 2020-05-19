@@ -63,7 +63,7 @@ namespace CSJavaClassesGeneratorCORE
 
             return ReadIntoString("Head")
                         .Replace(ClassCodeMask, Ac4yClass.Name)
-                        .Replace(InheritanceMask, Ac4yClass.Ancestor.Equals(null) ? "extends " + Ac4yClass.Ancestor : "")
+                        .Replace(InheritanceMask, !Ac4yClass.Ancestor.Equals("Object") ? "extends " + Ac4yClass.Ancestor : "")
                         .Replace(PackageNameMask, ProjectName)
                         ;
 
